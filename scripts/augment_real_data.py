@@ -7,7 +7,7 @@ import random
 
 from plyfile import PlyData, PlyElement
 import h5py
-f = h5py.File('../data/real_data.h5','r')
+f = h5py.File('C:\Project\PointNet_Custom_Object_Detection\scripts\real_data.h5','r')
 
 def rotate_point_cloud(batch_data):
   """ Randomly rotate the point clouds to augument the dataset
