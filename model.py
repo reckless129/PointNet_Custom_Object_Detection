@@ -10,9 +10,9 @@ sys.path.append(os.path.join(ROOT_DIR, 'utils'))
 import tf_util
 
 def placeholder_inputs(batch_size, num_point):
-    pointclouds_pl = tf.placeholder(tf.float32,
+    pointclouds_pl = tf.compat.v1.placeholder(tf.float32,
                                      shape=(batch_size, num_point, 6))
-    labels_pl = tf.placeholder(tf.int32,
+    labels_pl = tf.compat.v1.placeholder(tf.int32,
                                 shape=(batch_size, num_point))
     return pointclouds_pl, labels_pl
 
